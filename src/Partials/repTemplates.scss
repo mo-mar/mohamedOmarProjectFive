@@ -7,13 +7,38 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .repImageContainer{
-        width: 50%;
-        margin: 0 auto;
+    margin-top: 50px;
+}
+
+.repGroup{
+    border: 2px solid blue;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    h3{
+        font-size: 3.5rem;
     }
 }
+
+.repFlex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.repImageContainer{
+        width: 50%;
+        margin: 0 auto;
+}
+
 .repImageContainer img{
-    width: 100%;
+    width: 80%;
+}
+
+.repInfo{
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .email{

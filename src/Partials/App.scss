@@ -16,9 +16,16 @@
     height: 30px;
     display: block;
     margin-bottom: 20px;
+    text-align: center;
+    font-size: 3rem;
 }
 
 .searchField button{
-    width: 120px;
-    height: 40px;
+    width: 170px;
+    height: 60px;
+    font-size: 3rem;
+}
+
+.searchField button:hover{
+    background: tomato;
 }

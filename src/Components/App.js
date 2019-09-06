@@ -27,6 +27,9 @@ class App extends Component {
       this.setState({
         apiData: repData,
       })
+      // .catch(error => {
+      //     console.log("sorry!");
+      //   });
     });
   }
 
@@ -57,6 +60,8 @@ class App extends Component {
             type="submit">Rep me!
           </button>
         </form>
+      </div>
+      <div>
         <RepTemplates arrayData={this.state.apiData}/>
       </div>
     </div>

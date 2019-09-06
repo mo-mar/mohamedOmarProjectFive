@@ -14,9 +14,18 @@ body{
     width: 100%;
     max-width: 1080px;
     margin: 0 auto;
+    border: 2px solid tomato;
 }
 
 h1, h2, h3{
     font-family: 'Patua One', cursive;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: $mainColor;
 }
 
