@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import '../Partials/App.scss';
 import Header from './Header';
 import axios from 'axios';
-// import PostalCodeSearch from './PostalCodeSearch';
 import RepTemplates from './RepTemplates';
 
 class App extends Component {
@@ -28,7 +27,6 @@ class App extends Component {
       this.setState({
         apiData: repData,
       })
-      // console.log("this is what we want!", this.state.apiData);
     });
   }
 
@@ -36,7 +34,6 @@ class App extends Component {
     this.setState({
       postalCode: event.target.value.toUpperCase(),
     });
-    // console.log(this.state.postalCode);
   };
 
   handleSubmit = (event) => {
@@ -48,7 +45,7 @@ class App extends Component {
   return (
     <div className="App">
      <Header />
-      <div className="searchField">
+      <div className="searchField wrapper">
         <form>
           <input
             type="text"
@@ -57,7 +54,7 @@ class App extends Component {
             value={this.postalCode} />
           <button
             onClick={this.handleSubmit} 
-            type="submit">Press me
+            type="submit">Rep me!
           </button>
         </form>
         <RepTemplates arrayData={this.state.apiData}/>

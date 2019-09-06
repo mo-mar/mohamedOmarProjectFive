@@ -1,0 +1,21 @@
+@import './variables.scss';
+
+.generatedReps{
+    text-align: center;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .repImageContainer{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+.repImageContainer img{
+    width: 100%;
+}
+
+.email{
+    color: $mainColor;
+}

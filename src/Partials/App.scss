@@ -1,2 +1,24 @@
 @import './baseStyles.scss';
 @import './header.scss';
+@import './variables.scss';
+
+// these are the styles for the main input field
+
+.searchField form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchField input{
+    width: 150px;
+    height: 30px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.searchField button{
+    width: 120px;
+    height: 40px;
+}
