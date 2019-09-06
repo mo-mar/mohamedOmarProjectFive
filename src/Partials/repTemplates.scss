@@ -11,7 +11,7 @@
 }
 
 .repGroup{
-    border: 2px solid blue;
+    border: 2px solid $mainColor;
     padding: 20px;
     margin-bottom: 20px;
     width: 90%;
@@ -39,6 +39,11 @@
     display: flex;
     flex-direction: column;
 
+}
+
+.imageErrorMessage{
+    font-size: 1.8rem;
+    font-style: italic;
 }
 
 .email{

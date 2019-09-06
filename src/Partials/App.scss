@@ -4,6 +4,9 @@
 
 // these are the styles for the main input field
 
+.searchField{
+    animation: slide-in-right 0.8s forwards;
+}
 .searchField form{
     display: flex;
     flex-direction: column;
@@ -28,4 +31,31 @@
 
 .searchField button:hover{
     background: tomato;
+}
+
+// animation courtesy Animista.net
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
 }

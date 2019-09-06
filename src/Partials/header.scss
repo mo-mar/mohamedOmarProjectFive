@@ -3,6 +3,7 @@
 h1{
     color: $mainColor;
     font-size: 8rem;
+    // animation: slide-in-left 1s forwards;
 }
 
 header{
@@ -11,6 +12,8 @@ header{
     justify-content: center;
     align-items: center;
     padding-top: 100px;
+    animation: slide-in-left 0.8s forwards;
+
     h2{
         font-size: 3.8rem;
         width: 100%;
@@ -19,3 +22,31 @@ header{
         font-size: 3rem;
     }
 }
+
+// animation courtesy Animista.net
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
