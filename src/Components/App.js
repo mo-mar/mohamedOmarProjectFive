@@ -28,7 +28,7 @@ class App extends Component {
       this.setState({
         apiData: repData,
       })
-      console.log("this is what we want!", this.state.apiData);
+      // console.log("this is what we want!", this.state.apiData);
     });
   }
 
@@ -36,7 +36,7 @@ class App extends Component {
     this.setState({
       postalCode: event.target.value.toUpperCase(),
     });
-    console.log(this.state.postalCode);
+    // console.log(this.state.postalCode);
   };
 
   handleSubmit = (event) => {
@@ -60,7 +60,7 @@ class App extends Component {
             type="submit">Press me
           </button>
         </form>
-        <RepTemplates infoData={this.state.apiData[0]}/>
+        <RepTemplates arrayData={this.state.apiData}/>
       </div>
     </div>
   );
