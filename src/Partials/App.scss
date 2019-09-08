@@ -1,6 +1,9 @@
 @import './baseStyles.scss';
 @import './header.scss';
 @import './variables.scss';
+@import './repTemplates.scss';
+@import './mixins.scss';
+
 
 // these are the styles for the main input field
 
@@ -59,3 +62,4 @@
     opacity: 1;
   }
 }
+
