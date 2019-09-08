@@ -18,16 +18,35 @@
     width: 90%;
     h3{
         font-size: 3.5rem;
+        @include iphonePlus{
+            font-size: 3.3rem;
+        }
+        @include iphone678{
+            font-size: 3.1rem;
+        }
+        @include iphone5{
+            font-size: 3rem;
+        }
+    }
+    @include iphone5{
+        width: 80%;
     }
 }
 
 .repFlex{
     display: flex;
     justify-content: space-around;
+    @include iphonePlus{
+        flex-direction: column;
+    }
 }
 
 .repImageContainer{
-        width: 50%;
+    width: 50%;
+    @include iphonePlus{
+    flex-direction: column;
+    width: 100%;
+    }
 }
 
 .repImageContainer img{
@@ -39,7 +58,12 @@
     font-size: 3rem;
     display: flex;
     flex-direction: column;
-
+    @include iphone678{
+        font-size: 2.5rem;
+    }
+    @include iphone5{
+        font-size: 2rem;
+    }
 }
 
 .imageErrorMessage{
@@ -49,4 +73,10 @@
 
 .email{
     color: $mainColor;
+    @include iphonePlus{
+        font-size: 2.3rem;
+    }
+    @include iphone678{
+        font-size: 2rem;
+    }
 }

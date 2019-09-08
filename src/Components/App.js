@@ -25,11 +25,11 @@ class App extends Component {
       xmlToJSON: false
     }).then((res) => {
       const repData = res.data.representatives_centroid;
-      this.setState({
+      this.setState ({
         apiData: repData,
       })
       .catch(error => {
-        console.log("dumbo!");
+        console.log();
       })
     });
   }
@@ -40,24 +40,22 @@ class App extends Component {
     this.setState({
       postalCode: event.target.value.replace(/\s/g, '').toUpperCase(),
     });
-  };
+}
 
   // this will take the user's postal code and feed it into the requestRep function as a parameter. Then it will call that function.
+
   handleSubmit = (event) => {
     event.preventDefault();
-    this.requestRep(this.state.postalCode);
-    // const regex = /^[ABCEGHJKLMNPRSTVXY]{ 1}\d{ 1}[A-Z]{ 1 } *\d{ 1 } [A - Z]{ 1 } \d{ 1 }$/
-    // if (regex.test(this.state.postalCode = true)){
-    // }
-    // else{
-    //   console.log("bad postal code!");
-    // }
+    // const codeTest = /^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/;
+    this.requestRep(this.state.postalCode);    
+   
   }
+  
 
   render(){
   return (
     <div className="App">
-     <Header />
+    <Header />
       <div className="searchField wrapper">
         <form>
           <input
@@ -65,6 +63,7 @@ class App extends Component {
             name="postalCode"
             onChange={this.handleChange}
             value={this.postalCode} />
+            {this.state.isCodeWrong && <p>You got it wrong!</p>}
           <button
             onClick={this.handleSubmit} 
             type="submit">Rep me!
