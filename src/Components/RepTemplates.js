@@ -9,7 +9,7 @@ class RepTemplates extends Component {
         const { arrayData } = this.props;
         const repData = arrayData.map((oneRep, index) => {
             return(
-                <div className="repGroup" key={index}>
+                <div className="repGroup" key={index} tabindex="0">
                     <h3 className="repName">{oneRep.name} is your {oneRep.elected_office} in the {oneRep.representative_set_name}</h3>
                     <div className="repFlex">
                     {oneRep.photo_url !== '' ? 
