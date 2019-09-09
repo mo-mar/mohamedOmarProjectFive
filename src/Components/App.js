@@ -35,7 +35,7 @@ class App extends Component {
       // .catch(error => {
       //   console.log(error);
       // })
-      this.smoothScroll();
+      setTimeout(this.smoothScroll, 400)
     });
   }
 
@@ -46,6 +46,7 @@ class App extends Component {
       block: 'start' 
     });
   }
+
 
 
 
