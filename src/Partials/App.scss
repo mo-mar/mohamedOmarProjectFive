@@ -1,9 +1,10 @@
-@import './setup.scss';
-@import './baseStyles.scss';
-@import './variables.scss';
-@import './mixins.scss';
-@import './header.scss';
-@import './repTemplates.scss';
+@import 'setup';
+@import 'baseStyles';
+@import 'variables';
+@import 'mixins.scss';
+@import 'header.scss';
+@import 'repTemplates';
+@import 'footer';
 
 
 // these are the styles for the main input field
@@ -19,8 +20,9 @@
 }
 
 .searchField input{
-    width: 150px;
-    height: 30px;
+    width: 180px;
+    height: 40px;
+    padding: 20px;
     display: block;
     margin-bottom: 20px;
     text-align: center;
@@ -31,6 +33,7 @@
     width: 170px;
     height: 60px;
     font-size: 3rem;
+    margin-bottom: 50px;
 }
 
 .searchField button:hover{

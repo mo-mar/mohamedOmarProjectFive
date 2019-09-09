@@ -1,5 +1,4 @@
 import React from 'react';
-import '../Partials/header.scss'
 
 const Header = () => {
     return(

@@ -4,10 +4,11 @@ const Footer = () => {
     return (
         <footer>
             <div className="wrapper">
-                
+                <p>&copy; Mohamed Omar 2019</p>
+                <p>All data is pulled in from <a href="https://represent.opennorth.ca/api/">Open North's Represent API.</a></p>
             </div>
         </footer>
     )
 }
 
-export default Header;
+export default Footer;

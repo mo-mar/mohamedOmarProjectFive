@@ -3,6 +3,7 @@ import '../Partials/App.scss';
 import Header from './Header';
 import axios from 'axios';
 import RepTemplates from './RepTemplates';
+import Footer from './Footer';
 
 class App extends Component {
   constructor() {
@@ -29,9 +30,11 @@ class App extends Component {
       this.setState ({
         apiData: repData,
       })
-      .catch(error => {
-        console.log();
-      })
+      // Note: The API does not send us back a response when there is an error, so ufortunately .catch method does not work. However, there is already some error handling in place that will make sure the user enters a valid postal code.
+      
+      // .catch(error => {
+      //   console.log(error);
+      // })
     });
   }
 
@@ -74,7 +77,7 @@ class App extends Component {
             name="postalCode"
             onChange={this.handleChange}
             value={this.postalCode} />
-            {this.state.isPostalCodeWrong == 'yes' && <p className="postalError">Oops! That's not a valid postal code.</p>}
+            {this.state.isPostalCodeWrong === 'yes' && <p className="postalError">Oops! That's not a valid postal code.</p>}
           <button
             onClick={this.handleSubmit} 
             type="submit">Rep me!
@@ -84,6 +87,7 @@ class App extends Component {
       <div>
         <RepTemplates arrayData={this.state.apiData}/>
       </div>
+      <Footer />
     </div>
   );
   }

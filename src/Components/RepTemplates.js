@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-import '../Partials/repTemplates.scss';
 
 class RepTemplates extends Component {
-    
+
     handleBrokenImage = (event) => {
         event.target.src = "https://placedog.net/640/480?random"
     }
     render(){
         const { arrayData } = this.props;
         const repData = arrayData.map((oneRep, index) => {
+            console.log(index);
             return(
-            <main>
                 <div className="repGroup" key={index}>
                     <h3 className="repName">{oneRep.name} is your {oneRep.elected_office} in the {oneRep.representative_set_name}</h3>
                     <div className="repFlex">
@@ -30,13 +29,14 @@ class RepTemplates extends Component {
                         </div>
                     </div>
                 </div>
-            </main>
             )
         })
         return(
-            <div className="generatedReps wrapper">
-                { repData }
-            </div>
+            <main>
+                <div className="generatedReps wrapper">
+                    { repData }
+                </div>
+            </main>
         )
     }
 }
