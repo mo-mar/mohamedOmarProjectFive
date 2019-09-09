@@ -10,6 +10,7 @@ class App extends Component {
     this.state = {
       postalCode: '',
       apiData: [],
+      isPostalCodeWrong: '',
     }
   }
 
@@ -46,9 +47,18 @@ class App extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    // const codeTest = /^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/;
-    this.requestRep(this.state.postalCode);    
-   
+    const postalTest = /^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/;
+    if (postalTest.test(this.state.postalCode)){
+    this.requestRep(this.state.postalCode);
+      this.setState({
+        isPostalCodeWrong: '',
+      })   
+    }
+    else{
+      this.setState({
+        isPostalCodeWrong: "yes",
+      })
+    }
   }
   
 
@@ -58,12 +68,13 @@ class App extends Component {
     <Header />
       <div className="searchField wrapper">
         <form>
+          <label htmlFor="postalCodeInput" className="visuallyHidden">Postal Code</label>
           <input
             type="text"
             name="postalCode"
             onChange={this.handleChange}
             value={this.postalCode} />
-            {this.state.isCodeWrong && <p>You got it wrong!</p>}
+            {this.state.isPostalCodeWrong == 'yes' && <p className="postalError">Oops! That's not a valid postal code.</p>}
           <button
             onClick={this.handleSubmit} 
             type="submit">Rep me!

@@ -31,7 +31,7 @@ header{
       padding-top: 20px;
     }
     @include iphonePlus{
-      padding-top: 20px;
+      padding-top: 60px;
     }
     @include iphone5{
       padding-top: 0;
@@ -41,7 +41,7 @@ header{
         width: 100%;
         @include iphonePlus{
           font-size: 2.7rem;
-          margin-bottom: 30px;
+          margin-bottom: 40px;
         }
         @include iphone678{
           font-size: 2.5rem;
@@ -55,11 +55,12 @@ header{
         font-size: 2.8rem;
         @include iphonePlus{
           font-size: 2.3rem;
+          margin-bottom: 60px;
         }
         @include iphone678{
           font-size: 2rem;
         }
-         @include iphone5{
+        @include iphone5{
           font-size: 2rem;
         }
     }
