@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mohamedOmarProjectFive/my-app/static/css/main.465297ed.chunk.css",
-    "main.js": "/mohamedOmarProjectFive/my-app/static/js/main.22abd92e.chunk.js",
-    "main.js.map": "/mohamedOmarProjectFive/my-app/static/js/main.22abd92e.chunk.js.map",
-    "runtime~main.js": "/mohamedOmarProjectFive/my-app/static/js/runtime~main.6b7349d3.js",
-    "runtime~main.js.map": "/mohamedOmarProjectFive/my-app/static/js/runtime~main.6b7349d3.js.map",
-    "static/js/2.a3045d02.chunk.js": "/mohamedOmarProjectFive/my-app/static/js/2.a3045d02.chunk.js",
-    "static/js/2.a3045d02.chunk.js.map": "/mohamedOmarProjectFive/my-app/static/js/2.a3045d02.chunk.js.map",
-    "index.html": "/mohamedOmarProjectFive/my-app/index.html",
-    "precache-manifest.e13bad1a3d78918cc6186152c1cd4020.js": "/mohamedOmarProjectFive/my-app/precache-manifest.e13bad1a3d78918cc6186152c1cd4020.js",
-    "service-worker.js": "/mohamedOmarProjectFive/my-app/service-worker.js",
-    "static/css/main.465297ed.chunk.css.map": "/mohamedOmarProjectFive/my-app/static/css/main.465297ed.chunk.css.map"
+    "main.css": "/whos-my-rep/static/css/main.465297ed.chunk.css",
+    "main.js": "/whos-my-rep/static/js/main.fe53fe69.chunk.js",
+    "main.js.map": "/whos-my-rep/static/js/main.fe53fe69.chunk.js.map",
+    "runtime~main.js": "/whos-my-rep/static/js/runtime~main.0541c51b.js",
+    "runtime~main.js.map": "/whos-my-rep/static/js/runtime~main.0541c51b.js.map",
+    "static/js/2.a3045d02.chunk.js": "/whos-my-rep/static/js/2.a3045d02.chunk.js",
+    "static/js/2.a3045d02.chunk.js.map": "/whos-my-rep/static/js/2.a3045d02.chunk.js.map",
+    "index.html": "/whos-my-rep/index.html",
+    "precache-manifest.7e6cbfa0af4edbf4f5eb947edbe88ae6.js": "/whos-my-rep/precache-manifest.7e6cbfa0af4edbf4f5eb947edbe88ae6.js",
+    "service-worker.js": "/whos-my-rep/service-worker.js",
+    "static/css/main.465297ed.chunk.css.map": "/whos-my-rep/static/css/main.465297ed.chunk.css.map"
   }
 }
