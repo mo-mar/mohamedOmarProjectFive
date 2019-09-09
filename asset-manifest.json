@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/whos-my-rep/static/css/main.465297ed.chunk.css",
-    "main.js": "/whos-my-rep/static/js/main.fe53fe69.chunk.js",
-    "main.js.map": "/whos-my-rep/static/js/main.fe53fe69.chunk.js.map",
-    "runtime~main.js": "/whos-my-rep/static/js/runtime~main.0541c51b.js",
-    "runtime~main.js.map": "/whos-my-rep/static/js/runtime~main.0541c51b.js.map",
-    "static/js/2.a3045d02.chunk.js": "/whos-my-rep/static/js/2.a3045d02.chunk.js",
-    "static/js/2.a3045d02.chunk.js.map": "/whos-my-rep/static/js/2.a3045d02.chunk.js.map",
-    "index.html": "/whos-my-rep/index.html",
-    "precache-manifest.7e6cbfa0af4edbf4f5eb947edbe88ae6.js": "/whos-my-rep/precache-manifest.7e6cbfa0af4edbf4f5eb947edbe88ae6.js",
-    "service-worker.js": "/whos-my-rep/service-worker.js",
-    "static/css/main.465297ed.chunk.css.map": "/whos-my-rep/static/css/main.465297ed.chunk.css.map"
+    "main.css": "/mohamedOmarProjectFive/static/css/main.465297ed.chunk.css",
+    "main.js": "/mohamedOmarProjectFive/static/js/main.d478a254.chunk.js",
+    "main.js.map": "/mohamedOmarProjectFive/static/js/main.d478a254.chunk.js.map",
+    "runtime~main.js": "/mohamedOmarProjectFive/static/js/runtime~main.d5d7d84d.js",
+    "runtime~main.js.map": "/mohamedOmarProjectFive/static/js/runtime~main.d5d7d84d.js.map",
+    "static/js/2.a3045d02.chunk.js": "/mohamedOmarProjectFive/static/js/2.a3045d02.chunk.js",
+    "static/js/2.a3045d02.chunk.js.map": "/mohamedOmarProjectFive/static/js/2.a3045d02.chunk.js.map",
+    "index.html": "/mohamedOmarProjectFive/index.html",
+    "precache-manifest.9f7cdec86e38c6977707c599dd183991.js": "/mohamedOmarProjectFive/precache-manifest.9f7cdec86e38c6977707c599dd183991.js",
+    "service-worker.js": "/mohamedOmarProjectFive/service-worker.js",
+    "static/css/main.465297ed.chunk.css.map": "/mohamedOmarProjectFive/static/css/main.465297ed.chunk.css.map"
   }
 }
