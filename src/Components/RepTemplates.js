@@ -17,19 +17,17 @@ class RepTemplates extends Component {
                             <img src={oneRep.photo_url} alt="A photograph of the political representative." onError={this.handleBrokenImage} /> 
                         </div> : 
                         <div className="repImageContainer">
-                        <p className="imageErrorMessage">Oops! There's no photo currently available for this representative. Here's a placeholder until we get one:</p>
+                            <p className="imageErrorMessage">Oops! There's no photo currently available for this representative. Here's a placeholder until we get one:</p>
                             <img src="https://placedog.net/640/480?random" alt="A photograph of a cute dog."/>
                             </div> }
                         <div className="repInfo">
                             <p>District represented: {oneRep.district_name}</p>
                             {oneRep.personal_url !== '' ? 
                             <p>Learn more about {oneRep.first_name} <a href={oneRep.personal_url} target="_blank">here.</a></p> : null}
+                            {oneRep.personal_url == '' & oneRep.url !== '' ?
+                                <p>Learn more about {oneRep.first_name} <a href={oneRep.url} target="_blank">here.</a></p> : null}
                             <p>Contact: <span className="email">{oneRep.email}</span>
                             </p>
-                            {/* { oneRep.extra.twitter !== '' ? 
-                            <p>Twitter: {oneRep.extra.twitter}</p> : null} */}
-                            {/* {oneRep.offices[index].tel ?
-                            <p>Phone number: {oneRep.offices[0].tel}</p> : null} */}
                         </div>
                     </div>
                 </div>
