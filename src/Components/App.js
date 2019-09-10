@@ -98,10 +98,8 @@ class App extends Component {
           </button>
         </form>
       </div>
-      <div>
-        <RepTemplates arrayData={this.state.apiData}/>
-      </div>
-      <Footer />
+    <RepTemplates arrayData={this.state.apiData}/>
+    <Footer />
     </div>
   );
   }
