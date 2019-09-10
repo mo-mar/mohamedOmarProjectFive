@@ -30,7 +30,7 @@ class App extends Component {
       this.setState ({
         apiData: repData,
       });
-      // Note: The API does not send us back a response when there is an error, so ufortunately .catch method does not work. However, there is already some error handling in place that will make sure the user enters a valid postal code.
+      // Note: The API does not send us back a response when there is an error, so ufortunately the .catch method does not work at this time. However, there is already some error handling in place that will make sure the user enters a valid postal code, such as toUpperCase() and the regex test seen below.
 
       // .catch(error => {
       //   console.log(error);
@@ -46,9 +46,6 @@ class App extends Component {
       block: 'start' 
     });
   }
-
-
-
 
   // this will track the user's postal code input and make sure it has no spaces and be uppercase, which is a requirement by the API.
 
