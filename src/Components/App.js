@@ -15,7 +15,7 @@ class App extends Component {
     }
   }
 
-  // this function will take the user's postal code and add it as an endpoint to the API URL. Then it will take a specific object (represenstatives_centroid) from the returned data and add it to the state.
+  // this function will take the user's postal code and add it as an endpoint to the API URL. Then it will take a specific object from the payload (represenstatives_centroid) and add it to the state.
   requestRep = (postalCode) => {
     axios({
       method: 'GET',
@@ -73,6 +73,7 @@ class App extends Component {
     }
   }
   
+  // the following code renders the components and, in between, the input and button that will ultimately call our API. The results from that will be fed as a prop to the RepTemplates component.
 
   render(){
   return (

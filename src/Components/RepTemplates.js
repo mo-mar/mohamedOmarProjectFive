@@ -1,22 +1,30 @@
 import React, { Component } from 'react';
 
 class RepTemplates extends Component {
+    constructor(){
+        super();
+        this.state = {
+            isImageBroken: false,
+        }
+    }
+
     render(){
         const { arrayData } = this.props;
         const repData = arrayData.map((oneRep, index) => {
             return(
-                <div className="repGroup" key={index} tabindex="0">
+                <div className="repGroup" key={index} tabIndex="0">
                     <h3 className="repName">{oneRep.name} is your {oneRep.elected_office} in the {oneRep.representative_set_name}
                     </h3>
                     <div className="repFlex">
                         {oneRep.photo_url !== '' ? 
                         <div className="repImageContainer">
-                            <img src={oneRep.photo_url} alt="A photograph of the political representative." /> 
-                        </div> : 
+                            <img src={oneRep.photo_url} alt="A photograph of the political representative."/> 
+                        </div> :  
                         <div className="repImageContainer">
                             <p className="imageErrorMessage">Oops! There's no photo currently available for this representative. Here's a placeholder until we get one:</p>
                             <img src="https://placedog.net/640/480?random" alt="A placeholder image of a cute dog until a suitable photograph of the political representative is available."/>
-                            </div> }
+                            </div> 
+                        }
                         <div className="repInfo">
                             <p>District represented: {oneRep.district_name}</p>
                             {oneRep.personal_url !== '' ? 

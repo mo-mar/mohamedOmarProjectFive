@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer>
             <div className="wrapper">
-                <p>&copy; Mohamed Omar 2019</p>
+                <p>&copy; Mohamed Omar 2019. <a href="https://twitter.com/thatmohamedomar" target="_blank"><i className="fab fa-twitter"></i></a><a href="https://www.linkedin.com/in/mohamedomar2/" target="_blank"><i className="fab fa-linkedin-in"></i></a></p>
                 <p className="credit">All data is pulled in from <a href="https://represent.opennorth.ca/api/" target="_blank">Open North's Represent API.</a></p>
             </div>
         </footer>
