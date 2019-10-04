@@ -1,5 +1,7 @@
 Who's My Rep is a simple and useful app that connects Canadians with their local political representatives. Once a user enters their postal code, information about their local officials is pulled in from the Open North API and presented in a clear and accessible way.
 
+UPDATE: October 4, 2019 - Postal codes are now first sent to MapQuest's geocoding API to retrieve the user's longitude and latitude, and then that data is fed to the Open North API. This ensures even more accurate results for the user's political district and safeguards against any potential changes to boundaries by Elections Canada. Hurray!
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
